@@ -1,0 +1,196 @@
+.underVideoCont {
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.playlist-cont {
+  width: 40%;
+}
+
+.playlist-cont img {
+  width: 130px;
+}
+
+.playlist-item {
+  display: flex;
+}
+
+.video-details-cont {
+  width: 100%;
+  padding: 0 150px 0 40px;
+}
+
+.video-details-cont .title {
+  font-size: 36px;
+}
+
+.video-details-cont .from-now {
+  color: rgb(132, 152, 164);
+  font-size: 14px;
+}
+
+.video-details-cont .creator {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.video-details-cont .creator img {
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.video-player-cont {
+  text-align: center;
+  background: #000;
+}
+
+.playlist-item-desc {
+  padding-left: 15px;
+}
+
+.playlist-item-desc > div {
+  cursor: pointer;
+}
+
+.playlist-item-img {
+  cursor: pointer;
+}
+
+.playlist-item-desc-title {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.playlist-item-desc-user {
+  color: #8498a4;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loaderCont {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderCont > div {
+  margin-bottom: 35px;
+}
+
+.loaderCont.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.play-btn {
+  width: 60px;
+  height: 40px;
+  margin-right: 1em;
+  color: #fff;
+  position: relative;
+  transition: opacity 250ms ease-out, background-color 40ms, color 40ms;
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: rgb(0, 173, 239);
+}
+
+.play-btn svg {
+  fill: #fff;
+  width: 20px;
+}
+
+.video-player-inner-cont {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.video-player-inner-cont .vidLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1111;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.controls-cont {
+  position: absolute;
+  bottom: 20px;
+  width: 96%;
+  z-index: 111;
+  display: flex;
+  left: 2%;
+}
+
+.progress-bar-cont {
+  border: solid #666 0.1em;
+  padding: 1px;
+  align-self: self-end;
+  width: 100%;
+  position: relative;
+}
+
+.progress-bar-cont > div {
+  height: 12px;
+}
+
+.progressHoverBox {
+  position: absolute;
+  display: none;
+  color: #fff;
+  background: rgba(30, 30, 30, 0.9);
+  padding: 0 5px 5px 5px;
+  font-size: 12px;
+  margin-top: -28px;
+}
+
+.progress-bar-cont:hover .progressHoverBox {
+  display: block;
+}
+
+.progress-jumper {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.progress-bar {
+  background: #00adef;
+}
+
+.description {
+  border-top: 0.0625rem solid #e3e8e9;
+  padding-top: 15px;
+  margin-top: 25px;
+}
+
+.splash-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}

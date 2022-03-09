@@ -1,0 +1,17 @@
+.dowloadCont {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+    
+}
+
+#vimeo-input {
+    margin-bottom: 20px;
+}
+
+.errorMsgCont {
+    margin: 15px 0;
+    color: red;
+    font-size: 20px;
+}

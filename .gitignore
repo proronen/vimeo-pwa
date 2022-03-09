@@ -1,0 +1,11 @@
+/downloads
+/.vscode
+/server/node_modules
+/front/node_modules
+
+# testing
+/server/coverage
+/front/coverage
+
+# production
+/front/build
